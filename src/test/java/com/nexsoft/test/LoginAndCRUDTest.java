@@ -7,14 +7,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.nexsoft.pom.DashboardPage;
 import com.nexsoft.pom.HomePage;
 import com.nexsoft.utilities.Utilities;
 
 public class LoginAndCRUDTest {
 	private WebDriver driver;
 	private HomePage home;
-	private DashboardPage dashBoard;
 	private Utilities util;
 
 	@BeforeClass
@@ -23,7 +21,6 @@ public class LoginAndCRUDTest {
 		System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
 		driver = new ChromeDriver();
 		home = PageFactory.initElements(driver, HomePage.class);
-		dashBoard = PageFactory.initElements(driver, DashboardPage.class);
 		util = new Utilities();
 		driver.get(System.getProperty("url"));
 		driver.manage().window().maximize();

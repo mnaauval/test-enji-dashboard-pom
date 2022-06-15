@@ -11,24 +11,28 @@ public class CRUDBuilderPage {
 //	table[1]/tbody[1]/tr/td[2]
 
 	WebDriver driver;
-	@FindBy(xpath = "//table[1]/tbody[1]/tr")
-	List<WebElement> lstTable;
+	@FindBy(xpath = "//*[@id=\"form_crud\"]/div/table/thead/tr/th")
+	List<WebElement> cols;
+	@FindBy(xpath = "//*[@id=\"form_crud\"]/div/table/tbody/tr/td[1]")
+	List<WebElement> rows;
+	@FindBy(xpath = "//*[@id=\\\"form_crud\\\"]/div/table/thead/tr")
+	List<WebElement> lstElement;
 	
+
 	public CRUDBuilderPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public void clickSeeBtnFromTitle(String title) {
-		int iter = 0;
-		for (WebElement webElement : lstTable) {
-//			System.out.println(iter++);
-//			iter++;
-			System.out.println(webElement);
-//			WebElement see = webElement.findElement(By.xpath("//td/a[1]"));
-//			WebElement text = webElement.findElement(By.xpath("//td[2]"));
-//			
-//			if (text.getText().contains(title)) see.click();
+		System.out.println(cols.size());
+		System.out.println(rows.size());
+		
+		for (WebElement webElement : lstElement) {
+			System.out.println(webElement.getText());
+		}
+		
+		for (int i = 1; i < rows.size(); i++) {
+			
 		}
 	}
-	
 }
