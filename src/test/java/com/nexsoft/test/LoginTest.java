@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 
 import com.nexsoft.pom.DashboardPage;
 import com.nexsoft.pom.HomePage;
-import com.nexsoft.utilities.Screenshoot;
 import com.nexsoft.utilities.Utilities;
 
 public class LoginTest {
@@ -26,7 +25,6 @@ public class LoginTest {
 	private HomePage home;
 	private DashboardPage dashBoard;
 	private Utilities util;
-	private Screenshoot ss;
 	private List<String> lstError;
 
 	@BeforeClass
@@ -37,7 +35,6 @@ public class LoginTest {
 		home = PageFactory.initElements(driver, HomePage.class);
 		dashBoard = PageFactory.initElements(driver, DashboardPage.class);
 		util = new Utilities();
-		ss = new Screenshoot();
 		lstError = new ArrayList<String>();
 		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -52,7 +49,7 @@ public class LoginTest {
 	public void login_validUnameAndPassword() {
 		String uname = home.clickSignIn().login("mnaauval@gmail.com", "admin123").getUsername();
 		Assert.assertEquals(uname, "Kaeka");
-		String file = "<img src='file://" + ss.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 		dashBoard.logout();
 	}
@@ -63,7 +60,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "E-mail, Username or Password do not match." };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + ss.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -73,7 +70,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "User does not exist" };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + ss.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -83,7 +80,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "", "The Username field is required.", "The Password field is required.", "" };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + ss.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -91,7 +88,7 @@ public class LoginTest {
 	public void checkForgetPassword() {
 		String label = home.clickSignIn().clickForgetPassword().getLabel();
 		assertEquals(label, "Send a link to reset the password");
-		String file = "<img src='file://" + ss.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 

@@ -2,86 +2,86 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215123.PNG'height="350" width="792"/>]]>
+      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215458.PNG'height="350" width="792"/>]]>
     </line>
     <line>
-      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215127.PNG'height="350" width="792"/>]]>
+      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215503.PNG'height="350" width="792"/>]]>
     </line>
     <line>
-      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215130.PNG'height="350" width="792"/>]]>
+      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215505.PNG'height="350" width="792"/>]]>
     </line>
     <line>
-      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215133.PNG'height="350" width="792"/>]]>
+      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215508.PNG'height="350" width="792"/>]]>
     </line>
     <line>
-      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215136.PNG'height="350" width="792"/>]]>
+      <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215510.PNG'height="350" width="792"/>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-06-15T21:51:19 ICT" name="Default suite" finished-at="2022-06-15T21:51:39 ICT" duration-ms="20104">
+  <suite started-at="2022-06-15T21:54:49 ICT" name="Default suite" finished-at="2022-06-15T21:55:13 ICT" duration-ms="23677">
     <groups>
     </groups>
-    <test started-at="2022-06-15T21:51:19 ICT" name="Default test" finished-at="2022-06-15T21:51:39 ICT" duration-ms="20104">
+    <test started-at="2022-06-15T21:54:49 ICT" name="Default test" finished-at="2022-06-15T21:55:13 ICT" duration-ms="23677">
       <class name="com.nexsoft.test.LoginTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:19 ICT" name="init" finished-at="2022-06-15T21:51:21 ICT" duration-ms="2348" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:54:49 ICT" name="init" finished-at="2022-06-15T21:54:53 ICT" duration-ms="3404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:21 ICT" name="checkSession" finished-at="2022-06-15T21:51:22 ICT" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:54:53 ICT" name="checkSession" finished-at="2022-06-15T21:54:55 ICT" duration-ms="1714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSession -->
-        <test-method signature="login_validUnameAndPassword()[pri:1, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:22 ICT" name="login_validUnameAndPassword" finished-at="2022-06-15T21:51:25 ICT" duration-ms="3405" status="PASS">
+        <test-method signature="login_validUnameAndPassword()[pri:1, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:54:55 ICT" name="login_validUnameAndPassword" finished-at="2022-06-15T21:55:01 ICT" duration-ms="5928" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215123.PNG'height="350" width="792"/>]]>
+              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215458.PNG'height="350" width="792"/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- login_validUnameAndPassword -->
-        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:25 ICT" name="checkSession" finished-at="2022-06-15T21:51:25 ICT" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:01 ICT" name="checkSession" finished-at="2022-06-15T21:55:01 ICT" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSession -->
-        <test-method signature="login_validUname_notValidPassword()[pri:2, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:25 ICT" name="login_validUname_notValidPassword" finished-at="2022-06-15T21:51:27 ICT" duration-ms="1713" status="PASS">
+        <test-method signature="login_validUname_notValidPassword()[pri:2, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:01 ICT" name="login_validUname_notValidPassword" finished-at="2022-06-15T21:55:03 ICT" duration-ms="1730" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215127.PNG'height="350" width="792"/>]]>
+              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215503.PNG'height="350" width="792"/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- login_validUname_notValidPassword -->
-        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:27 ICT" name="checkSession" finished-at="2022-06-15T21:51:28 ICT" duration-ms="600" status="PASS">
+        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:03 ICT" name="checkSession" finished-at="2022-06-15T21:55:03 ICT" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSession -->
-        <test-method signature="login_notValidUnameAndPassword()[pri:3, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:28 ICT" name="login_notValidUnameAndPassword" finished-at="2022-06-15T21:51:30 ICT" duration-ms="2146" status="PASS">
+        <test-method signature="login_notValidUnameAndPassword()[pri:3, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:03 ICT" name="login_notValidUnameAndPassword" finished-at="2022-06-15T21:55:05 ICT" duration-ms="1707" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215130.PNG'height="350" width="792"/>]]>
+              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215505.PNG'height="350" width="792"/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- login_notValidUnameAndPassword -->
-        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:30 ICT" name="checkSession" finished-at="2022-06-15T21:51:30 ICT" duration-ms="504" status="PASS">
+        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:05 ICT" name="checkSession" finished-at="2022-06-15T21:55:06 ICT" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSession -->
-        <test-method signature="login_emptyFields()[pri:4, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:30 ICT" name="login_emptyFields" finished-at="2022-06-15T21:51:33 ICT" duration-ms="2560" status="PASS">
+        <test-method signature="login_emptyFields()[pri:4, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:06 ICT" name="login_emptyFields" finished-at="2022-06-15T21:55:08 ICT" duration-ms="1945" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215133.PNG'height="350" width="792"/>]]>
+              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215508.PNG'height="350" width="792"/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- login_emptyFields -->
-        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:33 ICT" name="checkSession" finished-at="2022-06-15T21:51:33 ICT" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="checkSession()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:08 ICT" name="checkSession" finished-at="2022-06-15T21:55:08 ICT" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSession -->
-        <test-method signature="checkForgetPassword()[pri:5, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:33 ICT" name="checkForgetPassword" finished-at="2022-06-15T21:51:36 ICT" duration-ms="2250" status="PASS">
+        <test-method signature="checkForgetPassword()[pri:5, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:08 ICT" name="checkForgetPassword" finished-at="2022-06-15T21:55:10 ICT" duration-ms="1524" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215136.PNG'height="350" width="792"/>]]>
+              <![CDATA[<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ss\20220615_215510.PNG'height="350" width="792"/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- checkForgetPassword -->
-        <test-method is-config="true" signature="closeConn()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:51:36 ICT" name="closeConn" finished-at="2022-06-15T21:51:39 ICT" duration-ms="3154" status="PASS">
+        <test-method is-config="true" signature="closeConn()[pri:0, instance:com.nexsoft.test.LoginTest@18df8434]" started-at="2022-06-15T21:55:10 ICT" name="closeConn" finished-at="2022-06-15T21:55:13 ICT" duration-ms="3204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeConn -->
