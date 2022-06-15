@@ -49,7 +49,7 @@ public class LoginTest {
 	public void login_validUnameAndPassword() {
 		String uname = home.clickSignIn().login("mnaauval@gmail.com", "admin123").getUsername();
 		Assert.assertEquals(uname, "Kaeka");
-		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShootLogin(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 		dashBoard.logout();
 	}
@@ -60,7 +60,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "E-mail, Username or Password do not match." };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShootLogin(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -70,7 +70,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "User does not exist" };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShootLogin(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -80,7 +80,7 @@ public class LoginTest {
 //		System.out.println(error);
 		String[] expected = { "", "The Username field is required.", "The Password field is required.", "" };
 		Assert.assertEquals(lstError.toArray(), expected);
-		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShootLogin(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 
@@ -88,7 +88,7 @@ public class LoginTest {
 	public void checkForgetPassword() {
 		String label = home.clickSignIn().clickForgetPassword().getLabel();
 		assertEquals(label, "Send a link to reset the password");
-		String file = "<img src='file://" + util.screenShoot(driver) + "'height=\"350\" width=\"792\"/>";
+		String file = "<img src='file://" + util.screenShootLogin(driver) + "'height=\"350\" width=\"792\"/>";
 		Reporter.log(file);
 	}
 

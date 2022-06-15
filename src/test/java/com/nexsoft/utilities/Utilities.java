@@ -25,10 +25,24 @@ public class Utilities {
 		}
 	}
 
-	public String screenShoot(WebDriver driver) {
+	public String screenShootLogin(WebDriver driver) {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String waktu = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-		String namaFile = "D:\\Project\\Java\\TestNG\\CicoolPOM\\src\\test\\resources\\ss\\" + waktu + ".PNG";
+		String namaFile = "D:\\Project\\Java\\TestNG\\CicoolPOM\\src\\test\\resources\\ssLogin\\" + waktu + ".PNG";
+		File screenshoot = new File(namaFile);
+		try {
+			FileUtils.copyFile(srcFile, screenshoot);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return namaFile;
+	}
+	
+	public String screenShootCRUD(WebDriver driver) {
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String waktu = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+		String namaFile = "D:\\Project\\Java\\TestNG\\CicoolPOM\\src\\test\\resources\\ssCRUD\\" + waktu + ".PNG";
 		File screenshoot = new File(namaFile);
 		try {
 			FileUtils.copyFile(srcFile, screenshoot);

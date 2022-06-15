@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>TestNG:  POM Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>POM Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 16 00:18:39 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36030 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nexsoft.test.LoginTest.login_notValidUnameAndPassword()'><b>login_notValidUnameAndPassword</b><br>Test class: com.nexsoft.test.LoginTest<br/>
+<a href="#Output-1380593659" onClick='toggleBox("Output-1380593659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1380593659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1380593659">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssLogin\20220616_001849.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nexsoft.test.LoginTest@a38c7fe</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginAndCRUDTest.login_goToCRUD_TestDB()'><b>login_goToCRUD_TestDB</b><br>Test class: com.nexsoft.test.LoginAndCRUDTest<br/>
+<a href="#Output-203854885" onClick='toggleBox("Output-203854885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-203854885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-203854885">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssCRUD\20220616_001905.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.nexsoft.test.LoginAndCRUDTest@537f60bf</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginTest.login_validUnameAndPassword()'><b>login_validUnameAndPassword</b><br>Test class: com.nexsoft.test.LoginTest<br/>
+<a href="#Output-1191863711" onClick='toggleBox("Output-1191863711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1191863711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1191863711">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssLogin\20220616_001844.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nexsoft.test.LoginTest@a38c7fe</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginAndCRUDTest.login_goToCRUD_Absensi()'><b>login_goToCRUD_Absensi</b><br>Test class: com.nexsoft.test.LoginAndCRUDTest<br/>
+<a href="#Output-983834017" onClick='toggleBox("Output-983834017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-983834017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-983834017">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssCRUD\20220616_001900.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.nexsoft.test.LoginAndCRUDTest@537f60bf</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginTest.login_validUname_notValidPassword()'><b>login_validUname_notValidPassword</b><br>Test class: com.nexsoft.test.LoginTest<br/>
+<a href="#Output-1088818894" onClick='toggleBox("Output-1088818894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1088818894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1088818894">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssLogin\20220616_001847.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nexsoft.test.LoginTest@a38c7fe</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginTest.checkForgetPassword()'><b>checkForgetPassword</b><br>Test class: com.nexsoft.test.LoginTest<br/>
+<a href="#Output-580965610" onClick='toggleBox("Output-580965610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-580965610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-580965610">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssLogin\20220616_001852.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nexsoft.test.LoginTest@a38c7fe</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginAndCRUDTest.login_goToCRUD_UserBiodata()'><b>login_goToCRUD_UserBiodata</b><br>Test class: com.nexsoft.test.LoginAndCRUDTest<br/>
+<a href="#Output-253722034" onClick='toggleBox("Output-253722034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253722034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253722034">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssCRUD\20220616_001910.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.nexsoft.test.LoginAndCRUDTest@537f60bf</td></tr>
+<tr>
+<td title='com.nexsoft.test.LoginTest.login_emptyFields()'><b>login_emptyFields</b><br>Test class: com.nexsoft.test.LoginTest<br/>
+<a href="#Output-639769517" onClick='toggleBox("Output-639769517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-639769517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-639769517">
+<img src='file://D:\Project\Java\TestNG\CicoolPOM\src\test\resources\ssLogin\20220616_001851.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nexsoft.test.LoginTest@a38c7fe</td></tr>
+</table><p>
+</body>
+</html>
